@@ -1,7 +1,8 @@
 <template>
     <div v-if="imageOnly" class="preview-item-mini zoom-img">
         <router-link :to="routeItem">
-            <img loading="lazy" :src="item.img" width="216" height="308" alt="">
+            <img v-if="item.img" loading="lazy" :src="item.img" width="216" height="308" alt="">
+            <img v-else loading="lazy" src="@/assets/default-poster.jpg" width="216" height="308" alt="">
         </router-link>
     </div>
     <div v-else class="preview-item">
@@ -10,7 +11,8 @@
             <router-link :to="routeItem" class="link-image"></router-link>
             <Rating v-if="item.rating" :rating="item.rating"/>
             <div class="image-holder">
-                <img loading="lazy" :src="item.img" width="216" height="308" alt="">
+                <img v-if="item.img" loading="lazy" :src="item.img" width="216" height="308" alt="">
+                <img v-else loading="lazy" src="@/assets/default-poster.jpg" width="216" height="308" alt="">
             </div>
 
         </div>

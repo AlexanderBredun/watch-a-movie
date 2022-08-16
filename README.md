@@ -1,24 +1,9 @@
 # watch-a-movie
+### Аналог кинопоиска с возможностью смотреть фильмы
+##### Дэмо: https://moonlit-moxie-0585e8.netlify.app/
 
-## Project setup
+## Стек технологий
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+vue, vuex, typescipt, scss
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

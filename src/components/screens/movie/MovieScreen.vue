@@ -29,6 +29,9 @@
                                 <li>
                                     <WatchLaterButton :item="item"/>
                                 </li>
+                                <li>
+                                    <FavoriteButton :item="item"/>
+                                </li>
                             </ul>
                         </div>
                         <ItemDetails title="О фильме" :items="item.details"/>
@@ -96,6 +99,7 @@
     import Reviews from '@/components/screens/movie/Reviews/Reviews.vue'
     import TabsItem from '@/components/ui/TabsItem.vue'
     import WatchLaterButton from '@/components/WatchLaterButton.vue'
+    import FavoriteButton from '@/components/FavoriteButton.vue'
 
     import { MovieSimilarSlider, MovieActorSlider } from '@/components/screens/movie'
 
@@ -117,7 +121,8 @@
             Facts,
             Reviews,
             WatchLaterButton,
-            AppButton
+            AppButton,
+            FavoriteButton
         },
         props: {
             item: {

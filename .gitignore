@@ -6,6 +6,9 @@ node_modules
 # local env files
 .env.local
 .env.*.local
+kinobd.txt
+src/kinobd.txt
+public/kinobd.txt
 
 # Log files
 npm-debug.log*
