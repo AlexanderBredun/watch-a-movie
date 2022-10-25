@@ -108,6 +108,9 @@
                     border-radius: 50%;
                     border: none;
                     transition: .3s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     &:hover{
                         background: var(--color-blue-120);
                         color: var(--color-white);
@@ -122,7 +125,8 @@
                 }
             }
             .swiper-slide{
-                width: auto;
+                width: 22rem;
+
 
             }
         }

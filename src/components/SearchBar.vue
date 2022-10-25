@@ -111,9 +111,11 @@
             top: 0;
             right: 0;
             margin: 0;
-            padding: 70px 20px 20px;
+            padding: 7px 20px 20px;
             transform: translate3d(100vw, 0 , 0);
-
+            @include sm{
+                padding: 70px 20px 20px;
+            }
             .close-btn{
                 position: absolute;
                 top: 2rem;
@@ -122,12 +124,17 @@
 
             .search-bar-input{
                 position: relative;
+                width: 90%;
+                @include sm{
+                    width: 100%;
+                }
                 input{
                     height: 6rem;
                     padding: 0 2rem 0 6rem;
                     width: 100%;
                     border-radius: 15px;
                     border: 0;
+
                 }
                 .search-icon{
                     position: absolute;

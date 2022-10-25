@@ -1,7 +1,7 @@
 <template>
     <div class="category-item" :class="[variant]">
         <div class="category-item-wrapper">
-            <router-link class="category-item-link" :to="'film/' + item.id"></router-link>
+            <router-link class="category-item-link" :to="'/film/' + item.id"></router-link>
             <div class="category-item-img zoom-img">
                 <Rating v-if="item.rating" class="category-item-rating" :rating="item.rating" />
                 <img :src="item.img" :alt="item.name" loading="lazy" class="">

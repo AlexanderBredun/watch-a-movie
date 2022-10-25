@@ -9,7 +9,7 @@
         </template>
 
         <template #content-main>
-            <CategoryList :items="slicedList" :loading="false" :error="!slicedList.length" />
+            <CategoryList :items="slicedList" :loading="false" :error="false" />
             <PaginationArrows v-if="totalPages > 1" :page="page" :totalPages="totalPages" @changePage="changePage" />
         </template>
 

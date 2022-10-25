@@ -252,7 +252,7 @@ class WatchAMovieService {
 
                         growth: {
                             title: 'Рост',
-                            value: growth / 100 + ' м.'
+                            value: growth ? growth / 100 + ' м.' : null
                         },
                         birthday: {
                             title: 'Дата рождения',
