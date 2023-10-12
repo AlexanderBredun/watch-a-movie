@@ -116,7 +116,7 @@ const router = useRouter();
 
 onMounted(() => {
     if (route.query.filters) {
-        console.log('from storage');
+       
         try {
             const filtersParsed: tFilters = JSON.parse(route.query.filters.toString());
             filters.value = { ...filters.value, ...filtersParsed };
@@ -168,7 +168,7 @@ function filtersReset() {
     router.push({ path: route.fullPath, query: querys });
 }
 function sendFilters(e?: Event) {
-    console.log('filters send', e?.target);
+   
     emit('sendFilters', filters.value);
 
     if (e?.target) {

@@ -6,7 +6,7 @@ export const useDebounce = (cb: (...args: any)=> void, delay = 300)=> {
 	
 	
 	return (...args: any)=> {
-		console.log(args);
+	
 		if(timeout.value){
 			clearTimeout(timeout.value);
 		}

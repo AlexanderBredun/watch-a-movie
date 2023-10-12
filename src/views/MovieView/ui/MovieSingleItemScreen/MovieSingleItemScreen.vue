@@ -15,7 +15,7 @@
                 </p>
                 <ul class="item-buttons">
                     <li>
-                        <AppButton tag="router-link" :to="'/watch/' + $route.params.id" with-icon variant="slim">
+                        <AppButton tag="router-link" :to="`/watch/${$route.params.id}?name=${item.nameRu || item.nameOriginal}`" with-icon variant="slim">
                             <i class="far fa-play"></i>
                             <span>Смотреть</span>
                         </AppButton>
@@ -105,6 +105,7 @@ interface SingleItemScreenProps {
 }
 
 defineProps<SingleItemScreenProps>();
+
 
 </script>
 

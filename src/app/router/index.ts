@@ -54,6 +54,11 @@ const router = createRouter({
       name: 'person',
       component: () => import('@/views/PersonView/PersonView.vue')
     },
+    {
+      path: '/watch/:id',
+      name: 'watch',
+      component: () => import('@/views/WatchView/WatchView.vue')
+    },
   ]
 });
 

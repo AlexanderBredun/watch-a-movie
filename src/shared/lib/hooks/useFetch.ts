@@ -12,8 +12,7 @@ export function useFetch<T>(req: ()=> Promise<T>, callback?: (arg: T)=> void): {
         error.value = false;
         req()
         .then(res => {
-            console.log(res);
-            
+           
             loading.value = false;
             data.value = res;
             if(callback){

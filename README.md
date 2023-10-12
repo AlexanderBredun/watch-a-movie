@@ -1,4 +1,4 @@
-## Site with movies
+## Site with movies 
 
 Created using: Vue3, Pinia, Typescript, SCSS and with [Feature Sliced Design](https://feature-sliced.design/) architecture
 

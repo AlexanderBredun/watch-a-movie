@@ -71,16 +71,14 @@ function updateMin(e: Event) {
     const target = e.target as HTMLInputElement;
 
     let val = +target.value;
-    console.log(val, props.modelValue.max, props.modelValue.min);
-    
+   
     if (val > props.modelValue.max) {
         val = props.modelValue.max - 1;
     }
     else if (val < props.min) {
         val = props.min;
     }
-    console.log(val);
-    
+   
     const res = {
         max: props.modelValue.max,
         min: val
