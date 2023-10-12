@@ -1,0 +1,28 @@
+$media-mobile: 580px;
+$media-tablet: 800px;
+$media-desktop: 1200px;
+
+:root {
+  --color-white: #fff;
+  --color-black: rgb(30 30 30);
+  --color-black-80: rgb(36 36 36);
+  --color-gray: #8d9093;
+  --color-blue: #69e9f5;
+  --color-blue-120: rgb(60 120 190);
+  --size-regular: 2rem;
+  --size-h1: 5rem;
+  --size-h2: 2.7rem;
+  --size-h3: 2.4rem;
+  --size-sm: 1.5rem;
+  --font-regular: 'Exo 2', verdana, arial, sans-serif;
+  --margin-section: 8rem;
+  --margin-block: 6rem;
+
+  @include sm {
+    --size-sm: 16px;
+  }
+
+  @include md {
+    --size-sm: 1.5rem;
+  }
+}
