@@ -4,14 +4,14 @@
         <template v-if="!loading">
             <slot></slot>
         </template>
-        <Loader :size="30" color="var(--color-black-80)" v-else/>
+        <AppLoader :size="30" color="var(--color-black-80)" v-else/>
 
     </AppButton>
 </template>
 
 <script setup lang="ts">
     import AppButton from '../AppButton/AppButton.vue';
-    import Loader from '../Loader/Loader.vue';
+    import AppLoader from '../AppLoader/AppLoader.vue';
 
     interface LoadingButtonProps{
         loading: boolean
@@ -27,4 +27,4 @@
         min-width: 150px;
 
     }
-</style>
+</style>../AppLoader/AppLoader.vue

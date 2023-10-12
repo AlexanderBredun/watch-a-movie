@@ -28,6 +28,9 @@ jobs:
       - name: run ts linter
         if: always()
         run: npm run type-check
+      - name: run linter general
+        if: always()
+        run: npm run lint
       - name: run css linter
         if: always()
         run: npm run lint:scss

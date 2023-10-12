@@ -22,6 +22,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-ignore
 import MultiRangeSlider from 'multi-range-slider-vue';
 import 'multi-range-slider-vue/MultiRangeSliderBarOnly.css';
 import type { InputSliderReturnValue, MinMaxFilter } from '../../lib/types';

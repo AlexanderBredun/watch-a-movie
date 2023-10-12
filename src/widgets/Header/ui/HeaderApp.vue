@@ -60,6 +60,7 @@
 </template>
 
 <script lang="ts" setup>
+// @ts-ignore
 import vClickOutside from 'click-outside-vue3';
 import { onMounted, reactive, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';

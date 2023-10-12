@@ -23,13 +23,13 @@
 </template>
 
 <script setup lang="ts">
-    import BackButton from '@/shared/ui/BackButton/BackButton.vue'
+    import BackButton from '@/shared/ui/BackButton/BackButton.vue';
 
     interface ErrorHelperProps{
         error?: 404 | 500
     }
     
-    defineProps<ErrorHelperProps>()
+    defineProps<ErrorHelperProps>();
 
 </script>
 

@@ -1,6 +1,6 @@
 <template>
    
-    <Loader v-if="loading" />
+    <AppLoader v-if="loading" />
     <p v-if="!filteredReviews.length" >
         Рецнзии не найдены
     </p>
@@ -22,7 +22,7 @@
 import { storeToRefs } from 'pinia';
 import { ref } from 'vue';
 import type { ReviewsTypes } from '@/shared/lib/types';
-import Loader from '@/shared/ui/Loader/Loader.vue';
+import AppLoader from '@/shared/ui/AppLoader/AppLoader.vue';
 import LoadingButton from '@/shared/ui/LoadingButton/LoadingButton.vue';
 import { useReviewStore } from '../../store/reviewsStore';
 import ItemReviewsFilter from '../ItemReviewsFilter/ItemReviewsFilter.vue';

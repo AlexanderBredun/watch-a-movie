@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
     args: {
-       
+       itemId: '1'
     },
     parameters: {
         msw: {

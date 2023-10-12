@@ -12,19 +12,19 @@ interface RatingBlockProps {
     rating: number
 }
 
-const props = defineProps<RatingBlockProps>()
+const props = defineProps<RatingBlockProps>();
 
 const ratingColor = computed(() => {
     if (props.rating >= 8) {
         return 'high-rating';
     }
     else if (props.rating > 6 && props.rating < 8) {
-        return 'medium-rating'
+        return 'medium-rating';
     }
-    return 'low-rating'
-})
+    return 'low-rating';
+});
 
-const ratingWithZero = computed(() => props.rating.toString().length === 1 ? props.rating + '.0' : props.rating)
+const ratingWithZero = computed(() => props.rating.toString().length === 1 ? props.rating + '.0' : props.rating);
 
 </script>
 

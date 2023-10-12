@@ -1,6 +1,6 @@
 <template>
    
-    <Loader v-if="loading && !error || (items === null && !error)" :size="80" class="loading" color="var(--color-white)" />
+    <AppLoader v-if="loading && !error || (items === null && !error)" :size="80" class="loading" color="var(--color-white)" />
     <slot v-else-if="error && $slots.errorSlot"  name="errorSlot"></slot>
     <div v-else-if="error && !$slots.errorSlot" class="error-internal-default">
         <h2 class="empty">
@@ -20,7 +20,7 @@
 
 <script lang="ts" setup>
     
-    import Loader from '@/shared/ui/Loader/Loader.vue';
+    import AppLoader from '@/shared/ui/AppLoader/AppLoader.vue';
 
     interface LayoutSearchLoadingProps{
         items?: null | Array<any>

@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
-import Loader from './Loader.vue';
+import AppLoader from './AppLoader.vue';
 
 
 const meta = {
     title: 'shared/Loader',
-    component: Loader,
+    component: AppLoader,
     tags: ['autodocs'],
     argTypes: {},
-} satisfies Meta<typeof Loader>;
+} satisfies Meta<typeof AppLoader>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
